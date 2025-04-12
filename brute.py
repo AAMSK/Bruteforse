@@ -2,13 +2,12 @@ import itertools
 import requests
 
 # Character set
-charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%*+"
+charset = "1234"
 min_len = 4
-max_len = 11
+max_len = 4
 
 # Get input from user
-url = input("🔗 Enter the login URL (e.g., http://localhost:8080/login/): ").strip()
-success_text = input("✅ Enter success text to look for (e.g., 'Welcome'): ").strip()
+url = input("🔗 Enter the login URL: ").strip()
 
 # Send POST with password only
 def try_login(password):
